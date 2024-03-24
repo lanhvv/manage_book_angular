@@ -1,0 +1,39 @@
+<div class="title">
+	<div>
+		Danh sách quản lý
+	</div>
+	<div>
+		<div></div>
+		<button>Tạo mới </button>
+	</div>
+</div>
+<div class="table">
+	<p-table [value]="books" [tableStyle]="{'min-width': '100%'}">
+		<ng-template pTemplate="header">
+			<tr>
+				<th>STT</th>
+				<th>Ảnh</th>
+				<th>Tên</th>
+				<th>Tổng chapter</th>
+				<th>Trạng thái</th>
+				<th>Tác giả</th>
+				<th>Lượt theo dõi</th>
+				<th>Lượng truy cập</th>
+				<th></th>
+			</tr>
+		</ng-template>
+		<ng-template pTemplate="body" let-product>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</ng-template>
+	</p-table>
+</div>

@@ -1,1 +1,9 @@
-<advanced-image [cldImg]="cld"></advanced-image>
+<!-- <advanced-image [cldImg]="cld"></advanced-image> -->
+<div class="main">
+    <div class="side-bar">
+        <a [routerLink]="['/book']">Quản lý sách</a>
+    </div>
+    <div class="body">
+        <router-outlet></router-outlet>
+    </div>
+</div>

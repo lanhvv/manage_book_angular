@@ -6,16 +6,24 @@ import { AppComponent } from './app.component';
 
 import {CloudinaryModule} from '@cloudinary/ng';
 import { HttpClientModule } from '@angular/common/http';
+import { UpdateComponent } from './modules/admin/book/update/update.component';
+import { TableComponent } from './modules/admin/book/table/table.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UpdateComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CloudinaryModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxDropzoneModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

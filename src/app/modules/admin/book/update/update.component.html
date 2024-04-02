@@ -1,6 +1,42 @@
-<ngx-dropzone (change)="onSelect($event)">
-	<ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
-	<ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
-		<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-	</ngx-dropzone-preview>
-</ngx-dropzone>
+<div>
+	<form novalidate>
+		<div>
+			<label for="">Tiêu đề</label>
+			<input type="text" pInputText/>
+		</div>
+		<div>
+			<label for=""></label>
+			<input type="text" pInputText/>
+		</div>
+		<div>
+			<label for=""></label>
+			<input type="text" pInputText/>
+		</div>
+		<div>
+			<label for=""></label>
+			<input type="text" pInputText/>
+		</div>
+		<div>
+			<label for=""></label>
+			<input type="text" pInputText/>
+		</div>
+		<div>
+			<label for=""></label>
+			<input type="text" pInputText/>
+		</div>
+		<div>
+			<label for=""></label>
+			<input type="text" pInputText/>
+		</div>
+		<div>
+			<label for=""></label>
+			<input type="text" pInputText/>
+		</div>
+		<ngx-dropzone (change)="onSelect($event)">
+			<ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+			<ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+				<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+			</ngx-dropzone-preview>
+		</ngx-dropzone>
+	</form>
+</div>

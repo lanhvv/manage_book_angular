@@ -10,7 +10,9 @@ import { UpdateComponent } from './modules/admin/book/update/update.component';
 import { TableComponent } from './modules/admin/book/table/table.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { TableModule } from 'primeng/table';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TagModule } from 'primeng/tag';
+import { InputTextModule } from 'primeng/inputtext';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,10 @@ import { TableModule } from 'primeng/table';
     CloudinaryModule,
     HttpClientModule,
     NgxDropzoneModule,
-    TableModule
+    TableModule,
+    BrowserAnimationsModule,
+    TagModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

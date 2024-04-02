@@ -4,7 +4,7 @@
 	</div>
 	<div>
 		<div></div>
-		<button>Tạo mới </button>
+		<button [routerLink]="['create']">Tạo mới </button>
 	</div>
 </div>
 <div class="table">
@@ -14,6 +14,7 @@
 				<th>STT</th>
 				<th>Ảnh</th>
 				<th>Tên</th>
+				<th>Phân lọai</th>
 				<th>Tổng chapter</th>
 				<th>Trạng thái</th>
 				<th>Tác giả</th>
@@ -22,16 +23,21 @@
 				<th></th>
 			</tr>
 		</ng-template>
-		<ng-template pTemplate="body" let-product>
-			<tr>
+		<ng-template pTemplate="body" let-book let-columns="columns">
+			<tr style="text-align: center;">
 				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td><advanced-image [cldImg]="book?.img"></advanced-image></td>
+				<td>{{book?.title}}</td>
+				<td>
+					<ng-container  *ngFor="let tag of book?.category">
+						<p-tag value="New"></p-tag>
+					</ng-container>
+				</td>
+				<td>{{book?.total_chap}}</td>
+				<td>{{book?.status}}</td>
+				<td>{{book?.author}}</td>
+				<td>{{book?.flower}}</td>
+				<td>{{book?.seen}}</td>
 				<td></td>
 			</tr>
 		</ng-template>
